@@ -1,11 +1,20 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-toolbar
+      dense
+      fixed
+      app
+    >
+      <v-toolbar-title class="mr-3 align-center">
+        <span class="title">Fridge Manager</span>
+      </v-toolbar-title>
+    </v-toolbar>
+    <v-content>
+      <v-container fluid>
+        <router-view></router-view>
+      </v-container>
+    </v-content>
+  </v-app>
 </template>
 
 <style lang="scss">
